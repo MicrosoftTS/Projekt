@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    background-color: #2C2F48;
+    color: white;
+    width: 20%;
+    padding: 20px;
+}
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sidebar .logo a {
+    text-decoration: none;
+    color: white;
+}
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+.sidebar .menu li {
+    margin: 10px 0;
+}
+.sidebar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px;
+    display: block;
+    border-radius: 3px;
+}
+.sidebar .menu li a:hover,
+.sidebar .menu li.active a {
+    background-color: #44476A;
+    color: #FFD700;
+}
+.content {
+    background-color: #f5f7fb;
+    flex-grow: 1;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    padding: 8px;
+    text-align: left;
+}
+table th {
+    background-color: #2C2F48;
+    color: white;
+}
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+form {
+    background-color: #f5f7fa;
+    padding: 15px;
+    margin-top: 20px;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 50%;
+    padding: 6px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+form button {
+    background-color: #F5A623;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #d4881c;
+}
+button.add-worker,
+button.cancel {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+button.add-worker {
+    background-color: #F5A623;
+    color: white;
+}
+
+button.add-worker:hover {
+    background-color: #d4881c;
+}
+
+button.cancel {
+    background-color: #ccc;
+    color: #666;
+}
+
+button.cancel:hover {
+    background-color: #bbb;
+}
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF5E5E;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.logout-button a {
+    color: white;
+    text-decoration: none;
+}
+.logout-button:hover {
+    background-color: #FF3E3E;
+}
